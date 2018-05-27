@@ -1,0 +1,86 @@
+
+R-trees package
+This directory contains an implementation of the R-trees index structure,
+written in C.
+
+Here is a list of the files that should be present in the directory:
+
+Makefile
+README
+allocate.c
+assert.h
+clock.c
+error.c
+graphics.c
+index.c
+index.h
+macros.h
+main.c
+medium.ca
+newtid.c
+node.c
+options.h
+printstats.c
+rectangle.c
+sccs.h
+small.ca
+split.e.c
+split.e.h
+split.l.c
+split.l.h
+split.o.h
+split.q.c
+split.q.h
+y.spec
+y.tab.c
+
+Makefile
+Helps compile and link different versions of the program.
+
+README
+That's this file.
+
+*.c, *.h files
+These are C language source files.
+Look at Makefile to see how the program is put together.
+
+y.spec, y.tab.c
+y.spec is an input file for yacc (see man yacc under Unix), which is
+a parser generator.  yacc produces y.tab.c, a c source file which
+is compiled with the others.
+
+split*
+There are three basic versions of the RTree program, called linear, quad
+and exp, using different node split algorithms.  The differences are in
+the files starting with "split..".
+
+options.h
+Editing options.h allows setting other parameters, such as the
+page size and the number of dimensions.
+
+main.c
+The main program exercises the R-tree data structure, and prints
+statistics.  It gets 2-dimensional spatial data by reading integrated
+circuit layout descriptions from files with suffix .ca produced by CAESAR
+(see below).
+
+graphics.c
+There is some optional graphics code, which was set up so that
+one could watch the program working on VLSI layout data (it's fun
+to watch).  This is set up for a certain device at Berkeley and
+probably won't be much use.  The name of the file graphics.c
+and grapics.o has been removed from lists in Makefile.
+If you want graphics you should probably look at graphics.c
+and adapt it to whatever facilities you have.
+
+*.ca
+These files contain integrated circuit layout data and are produced
+by the CAESAR layout editor used at UC Berkeley.  Just a couple of
+files are included for the exerciser program to use as test cases.
+
+For a general description of R-trees, see A. Guttman,
+"R-trees: A Dynamic Index Structure for Spatial Searching",
+ACM SIGMOD Conference Proceedings, June 1984.
+
+Toni Guttman
+Wed Sep 11 13:44:13 1985
