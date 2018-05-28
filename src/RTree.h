@@ -355,7 +355,7 @@ protected:
   void FreeListNode(ListNode* a_listNode);
   bool Overlap(Rect* a_rectA, Rect* a_rectB);
   void ReInsert(Node* a_node, ListNode** a_listNode);
-  bool Search(Node* a_node, Rect* a_rect, int& a_foundCount, bool __cdecl a_resultCallback(DATATYPE a_data, std::vector<int> *a_context), std::vector<int> *a_context);
+  bool Search(Node* a_node, Rect* a_rect, int& a_touchCount, bool __cdecl a_resultCallback(DATATYPE a_data, std::vector<int> *a_context), std::vector<int> *a_context);
   void RemoveAllRec(Node* a_node);
   void Reset();
   void CountRec(Node* a_node, int& a_count);
@@ -545,10 +545,10 @@ int RTREE_QUAL::Search(const ELEMTYPE a_min[NUMDIMS], const ELEMTYPE a_max[NUMDI
 
   // NOTE: May want to return search result another way, perhaps returning the number of found elements here.
 
-  int foundCount = 0;
-  Search(m_root, &rect, foundCount, a_resultCallback, a_context);
+  int touchCount = 0;
+  Search(m_root, &rect, touchCount, a_resultCallback, a_context);
 
-  return foundCount;
+  return touchCount;
 }
 
 
@@ -1544,11 +1544,13 @@ void RTREE_QUAL::ReInsert(Node* a_node, ListNode** a_listNode)
 
 // Search in an index tree or subtree for all data retangles that overlap the argument rectangle.
 RTREE_TEMPLATE
-bool RTREE_QUAL::Search(Node* a_node, Rect* a_rect, int& a_foundCount, bool __cdecl a_resultCallback(DATATYPE a_data, std::vector<int> *a_context), std::vector<int> *a_context)
+bool RTREE_QUAL::Search(Node* a_node, Rect* a_rect, int& a_touchCount, bool __cdecl a_resultCallback(DATATYPE a_data, std::vector<int> *a_context), std::vector<int> *a_context)
 {
   ASSERT(a_node);
   ASSERT(a_node->m_level >= 0);
   ASSERT(a_rect);
+
+  ++a_touchCount;
 
   if(a_node->IsInternalNode()) // This is an internal node in the tree
   {
@@ -1556,7 +1558,7 @@ bool RTREE_QUAL::Search(Node* a_node, Rect* a_rect, int& a_foundCount, bool __cd
     {
       if(Overlap(a_rect, &a_node->m_branch[index].m_rect))
       {
-        if(!Search(a_node->m_branch[index].m_child, a_rect, a_foundCount, a_resultCallback, a_context))
+        if(!Search(a_node->m_branch[index].m_child, a_rect, a_touchCount, a_resultCallback, a_context))
         {
           return false; // Don't continue searching
         }
@@ -1574,7 +1576,6 @@ bool RTREE_QUAL::Search(Node* a_node, Rect* a_rect, int& a_foundCount, bool __cd
         // NOTE: There are different ways to return results.  Here's where to modify
         if(&a_resultCallback)
         {
-          ++a_foundCount;
           if(!a_resultCallback(id, a_context))
           {
             return false; // Don't continue searching
