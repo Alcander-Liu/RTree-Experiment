@@ -1,0 +1,94 @@
+
+--------------- range: 5000 ----------------
+Dimension: 8
+query file: input/query1000data.txt
+feature file: input/gray_hist_8dim.txt
+data amount: 1000
+Range: 5000
+Search Amount: 100
+Average touched times per search: 36.95
+Average results found per search: 2.06
+
+Dimension: 8
+query file: input/query2000data.txt
+feature file: input/gray_hist_8dim.txt
+data amount: 2000
+Range: 5000
+Search Amount: 100
+Average touched times per search: 66.75
+Average results found per search: 3.12
+
+Dimension: 8
+query file: input/query3000data.txt
+feature file: input/gray_hist_8dim.txt
+data amount: 3000
+Range: 5000
+Search Amount: 100
+Average touched times per search: 63.59
+Average results found per search: 2.57
+
+Dimension: 8
+query file: input/query4000data.txt
+feature file: input/gray_hist_8dim.txt
+data amount: 4000
+Range: 5000
+Search Amount: 100
+Average touched times per search: 90.34
+Average results found per search: 3.04
+
+Dimension: 8
+query file: input/query.txt
+feature file: input/gray_hist_8dim.txt
+data amount: 5000
+Range: 5000
+Search Amount: 96
+Average touched times per search: 134.563
+Average results found per search: 3.86458
+
+
+--------------- range: 7000 ----------------------
+Dimension: 8
+query file: input/query1000data.txt
+feature file: input/gray_hist_8dim.txt
+data amount: 1000
+Range: 7000
+Search Amount: 100
+Average touched times per search: 51.62
+Average results found per search: 7.45
+
+Dimension: 8
+query file: input/query2000data.txt
+feature file: input/gray_hist_8dim.txt
+data amount: 2000
+Range: 7000
+Search Amount: 100
+Average touched times per search: 89.75
+Average results found per search: 14.2
+
+Dimension: 8
+query file: input/query3000data.txt
+feature file: input/gray_hist_8dim.txt
+data amount: 3000
+Range: 7000
+Search Amount: 100
+Average touched times per search: 85.98
+Average results found per search: 10.81
+
+Dimension: 8
+query file: input/query4000data.txt
+feature file: input/gray_hist_8dim.txt
+data amount: 4000
+Range: 7000
+Search Amount: 100
+Average touched times per search: 124.12
+Average results found per search: 16.39
+
+Dimension: 8
+query file: input/query.txt
+feature file: input/gray_hist_8dim.txt
+data amount: 5000
+Range: 7000
+Search Amount: 96
+Average touched times per search: 188.188
+Average results found per search: 23.0417
+

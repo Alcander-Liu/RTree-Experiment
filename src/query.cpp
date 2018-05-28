@@ -6,7 +6,7 @@
 #include <vector>
 #include "RTree.h"
 
-#define NUMDIMS	16
+#define NUMDIMS	8
 
 bool MySearchCallback(int id, std::vector<int> *ids) 
 {
@@ -31,7 +31,7 @@ int main()
   std::ifstream query(queryFile);
   std::ifstream feature(featureFile);
   std::ifstream imageList("./input/imagelist.txt");
-  std::ofstream outputResult("./output/result.txt", std::ofstream::app);
+  std::ofstream outputResult("./output/differentDataAmountResult.txt", std::ofstream::app);
 
   outputResult << "Dimension: " << NUMDIMS << std::endl;
   outputResult << "query file: " << queryFile << std::endl;
