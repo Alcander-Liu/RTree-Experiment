@@ -6,7 +6,7 @@
 #include <vector>
 #include "RTree.h"
 
-#define NUMDIMS	8
+#define NUMDIMS	16
 
 bool MySearchCallback(int id, std::vector<int> *ids) 
 {
@@ -90,6 +90,7 @@ int main()
   }
   std::cout << "Average touched times per search: " << float(touchCountSum)/searchAmount << std::endl;
   std::cout << "Average results found per search: " << float(resultAmount)/searchAmount << std::endl;
+  outputResult << "Search Amount: " << searchAmount << std::endl;
   outputResult << "Average touched times per search: " << float(touchCountSum)/searchAmount << std::endl;
   outputResult << "Average results found per search: " << float(resultAmount)/searchAmount << std::endl << std::endl;
   return 0;
