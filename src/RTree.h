@@ -8,6 +8,7 @@
 #include <math.h>
 #include <assert.h>
 #include <stdlib.h>
+#include <vector>
 
 #define ASSERT assert // RTree uses ASSERT( condition )
 #ifndef Min
@@ -90,7 +91,7 @@ public:
   /// \param a_resultCallback Callback function to return result.  Callback should return 'true' to continue searching
   /// \param a_context User context to pass as parameter to a_resultCallback
   /// \return Returns the number of entries found
-  int Search(const ELEMTYPE a_min[NUMDIMS], const ELEMTYPE a_max[NUMDIMS], bool __cdecl a_resultCallback(DATATYPE a_data, void* a_context), void* a_context);
+  int Search(const ELEMTYPE a_min[NUMDIMS], const ELEMTYPE a_max[NUMDIMS], bool __cdecl a_resultCallback(DATATYPE a_data, std::vector<int> *a_context), std::vector<int> *a_context);
   
   /// Remove all entries from tree
   void RemoveAll();
@@ -354,7 +355,7 @@ protected:
   void FreeListNode(ListNode* a_listNode);
   bool Overlap(Rect* a_rectA, Rect* a_rectB);
   void ReInsert(Node* a_node, ListNode** a_listNode);
-  bool Search(Node* a_node, Rect* a_rect, int& a_foundCount, bool __cdecl a_resultCallback(DATATYPE a_data, void* a_context), void* a_context);
+  bool Search(Node* a_node, Rect* a_rect, int& a_foundCount, bool __cdecl a_resultCallback(DATATYPE a_data, std::vector<int> *a_context), std::vector<int> *a_context);
   void RemoveAllRec(Node* a_node);
   void Reset();
   void CountRec(Node* a_node, int& a_count);
@@ -525,7 +526,7 @@ void RTREE_QUAL::Remove(const ELEMTYPE a_min[NUMDIMS], const ELEMTYPE a_max[NUMD
 
 
 RTREE_TEMPLATE
-int RTREE_QUAL::Search(const ELEMTYPE a_min[NUMDIMS], const ELEMTYPE a_max[NUMDIMS], bool __cdecl a_resultCallback(DATATYPE a_data, void* a_context), void* a_context)
+int RTREE_QUAL::Search(const ELEMTYPE a_min[NUMDIMS], const ELEMTYPE a_max[NUMDIMS], bool __cdecl a_resultCallback(DATATYPE a_data, std::vector<int> *a_context), std::vector<int> *a_context)
 {
 #ifdef _DEBUG
   for(int index=0; index<NUMDIMS; ++index)
@@ -1543,7 +1544,7 @@ void RTREE_QUAL::ReInsert(Node* a_node, ListNode** a_listNode)
 
 // Search in an index tree or subtree for all data retangles that overlap the argument rectangle.
 RTREE_TEMPLATE
-bool RTREE_QUAL::Search(Node* a_node, Rect* a_rect, int& a_foundCount, bool __cdecl a_resultCallback(DATATYPE a_data, void* a_context), void* a_context)
+bool RTREE_QUAL::Search(Node* a_node, Rect* a_rect, int& a_foundCount, bool __cdecl a_resultCallback(DATATYPE a_data, std::vector<int> *a_context), std::vector<int> *a_context)
 {
   ASSERT(a_node);
   ASSERT(a_node->m_level >= 0);
