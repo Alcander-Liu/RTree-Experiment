@@ -1174,7 +1174,7 @@ ELEMTYPEREAL RTREE_QUAL::RectSphericalVolume(Rect* a_rect)
   }
   else
   {
-    return (ELEMTYPEREAL)(pow(radius, NUMDIMS) * m_unitSphereVolume);
+    return (ELEMTYPEREAL)(pow(radius*pow(10,-5), NUMDIMS) * m_unitSphereVolume);
   }
 }
 
