@@ -115,3 +115,30 @@ Search Amount: 96
 Average touched times per search: 272.396
 Average results found per search: 151.969
 
+Dimension: 16
+query file: input/query.txt
+feature file: input/gray_hist_16dim.txt
+data amount: 5000
+Range: 5000
+Search Amount: 96
+Average touched times per search: 110.094
+Average results found per search: 1.10417
+
+Dimension: 16
+query file: input/query.txt
+feature file: input/gray_hist_16dim.txt
+data amount: 5000
+Range: 0
+Search Amount: 96
+Average touched times per search: 40.6563
+Average results found per search: 1
+
+Dimension: 16
+query file: input/query.txt
+feature file: input/gray_hist_16dim.txt
+data amount: 5000
+Range: 10000
+Search Amount: 96
+Average touched times per search: 225.74
+Average results found per search: 12.3229
+
