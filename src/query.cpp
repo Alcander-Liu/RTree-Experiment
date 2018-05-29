@@ -116,6 +116,7 @@ int main()
       //std::cout << "  " << imageNames[ids[i]] << std::endl;
     ids.clear();
   }
+  std::cout << "Search Amount: " << searchAmount << std::endl;
   std::cout << "Average touched times per search: " << float(touchCountSum)/searchAmount << std::endl;
   std::cout << "Average results found per search: " << float(resultAmount)/searchAmount << std::endl;
   std::cout << "Average same kind rate per search: " << float(sameKindRateSum)/searchAmount << std::endl;
