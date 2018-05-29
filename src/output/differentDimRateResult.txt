@@ -1,0 +1,50 @@
+Dimension: 8
+query file: input/queryAllImage.txt
+feature file: input/gray_hist_8dim.txt
+data amount: 5613
+Range: 0
+Search Amount: 5613
+Average touched times per search: 50.1331
+Average results found per search: 1
+Average same kind rate per search: 1
+
+Dimension: 8
+query file: input/queryAllImage.txt
+feature file: input/gray_hist_8dim.txt
+data amount: 5613
+Range: 3000
+Search Amount: 5613
+Average touched times per search: 105.019
+Average results found per search: 1.22947
+Average same kind rate per search: 0.895065
+
+Dimension: 8
+query file: input/queryAllImage.txt
+feature file: input/gray_hist_8dim.txt
+data amount: 5613
+Range: 4000
+Search Amount: 5613
+Average touched times per search: 129.065
+Average results found per search: 2.28345
+Average same kind rate per search: 0.69054
+
+Dimension: 8
+query file: input/queryAllImage.txt
+feature file: input/gray_hist_8dim.txt
+data amount: 5613
+Range: 5000
+Search Amount: 5613
+Average touched times per search: 155.617
+Average results found per search: 5.79102
+Average same kind rate per search: 0.522003
+
+Dimension: 8
+query file: input/queryAllImage.txt
+feature file: input/gray_hist_8dim.txt
+data amount: 5613
+Range: 6000
+Search Amount: 5613
+Average touched times per search: 184.454
+Average results found per search: 14.1089
+Average same kind rate per search: 0.404775
+

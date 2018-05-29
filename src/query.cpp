@@ -8,6 +8,21 @@
 
 #define NUMDIMS	8
 
+const int kindIndex[10]={0,504,1134,1826,2321,2826,3334,3852,4356,4983};
+
+int kind(int index)
+{
+  int i;
+  for(i=0;i < 9;i++)
+  {
+    if(kindIndex[i] <= index && kindIndex[i+1] > index)
+    {
+        break;
+    }
+  }
+  return i;
+}
+
 bool MySearchCallback(int id, std::vector<int> *ids) 
 {
   ids->push_back(id);
@@ -31,7 +46,7 @@ int main()
   std::ifstream query(queryFile);
   std::ifstream feature(featureFile);
   std::ifstream imageList("./input/imagelist.txt");
-  std::ofstream outputResult("./output/differentDimensionResult.txt", std::ofstream::app);
+  std::ofstream outputResult("./output/differentDimRateResult.txt", std::ofstream::app);
 
   outputResult << "Dimension: " << NUMDIMS << std::endl;
   outputResult << "query file: " << queryFile << std::endl;
@@ -65,7 +80,7 @@ int main()
 
   std::string queryName;
   std::vector<int> ids; //store search results
-  int queryIndex, touchCount, touchCountSum = 0, searchAmount = 0, resultAmount = 0;
+  int queryIndex, queryKind, touchCount, touchCountSum = 0, searchAmount = 0, resultAmount = 0, sameKindRateSum = 0;
   int *queryRectMin = new int[NUMDIMS];
   int *queryRectMax = new int[NUMDIMS];
 
@@ -79,9 +94,22 @@ int main()
       queryRectMin[i] = features[queryIndex][i] - range;
     }
     touchCount = tree.Search(queryRectMin, queryRectMax, MySearchCallback, &ids);
+    searchAmount++;
     touchCountSum += touchCount;
     resultAmount += ids.size();
-    searchAmount++;
+
+    // count the results that are the same kind with the queryImage
+    queryKind = kind(queryIndex);
+    int sameKindAmount = 0;
+    for(int i = 0;i < ids.size();i++)
+    {
+      if(kind(ids[i]) == queryKind)
+      {
+        sameKindAmount++;
+      }
+    }
+    sameKindRateSum += float(sameKindAmount)/ids.size();
+
     //std::cout << queryName <<"  search results: " << std::endl;
     //std::cout << "  Node touched times: " << touchCount << std::endl;
     //for(int i = 0; i < ids.size(); i++)
@@ -90,8 +118,10 @@ int main()
   }
   std::cout << "Average touched times per search: " << float(touchCountSum)/searchAmount << std::endl;
   std::cout << "Average results found per search: " << float(resultAmount)/searchAmount << std::endl;
+  std::cout << "Average same kind rate per search: " << float(sameKindRateSum)/searchAmount << std::endl;
   outputResult << "Search Amount: " << searchAmount << std::endl;
   outputResult << "Average touched times per search: " << float(touchCountSum)/searchAmount << std::endl;
-  outputResult << "Average results found per search: " << float(resultAmount)/searchAmount << std::endl << std::endl;
+  outputResult << "Average results found per search: " << float(resultAmount)/searchAmount << std::endl;
+  outputResult << "Average same kind rate per search: " << float(sameKindRateSum)/searchAmount << std::endl << std::endl;
   return 0;
 }
