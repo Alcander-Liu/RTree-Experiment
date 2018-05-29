@@ -20,7 +20,7 @@ Average same kind rate per search: 1
 
 Dimension: 9
 query file: input/queryAllImage.txt
-feature file: input/hsv_component.txt
+feature file: input/hsv_moment.txt
 data amount: 5613
 Range: 0
 Search Amount: 5613
