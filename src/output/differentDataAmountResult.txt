@@ -92,3 +92,57 @@ Search Amount: 96
 Average touched times per search: 188.188
 Average results found per search: 23.0417
 
+---------- range = 0 ------ query all images ---------------
+Dimension: 8
+query file: input/query1000Image.txt
+feature file: input/gray_hist_8dim.txt
+data amount: 1000
+Range: 0
+Search Amount: 1000
+Average touched times per search: 12.095
+Average results found per search: 1
+
+Dimension: 8
+query file: input/query2000Image.txt
+feature file: input/gray_hist_8dim.txt
+data amount: 2000
+Range: 0
+Search Amount: 2000
+Average touched times per search: 21.875
+Average results found per search: 1
+
+Dimension: 8
+query file: input/query3000Image.txt
+feature file: input/gray_hist_8dim.txt
+data amount: 3000
+Range: 0
+Search Amount: 3000
+Average touched times per search: 27.4907
+Average results found per search: 1
+
+Dimension: 8
+query file: input/query4000Image.txt
+feature file: input/gray_hist_8dim.txt
+data amount: 4000
+Range: 0
+Search Amount: 4000
+Average touched times per search: 36.3628
+Average results found per search: 1
+
+Dimension: 8
+query file: input/query5000Image.txt
+feature file: input/gray_hist_8dim.txt
+data amount: 5000
+Range: 0
+Search Amount: 5000
+Average touched times per search: 45.2136
+Average results found per search: 1
+
+Dimension: 8
+query file: input/queryAllImage.txt
+feature file: input/gray_hist_8dim.txt
+data amount: 5613
+Range: 0
+Search Amount: 5613
+Average touched times per search: 50.1331
+Average results found per search: 1

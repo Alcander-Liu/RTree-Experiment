@@ -31,7 +31,7 @@ int main()
   std::ifstream query(queryFile);
   std::ifstream feature(featureFile);
   std::ifstream imageList("./input/imagelist.txt");
-  std::ofstream outputResult("./output/differentDataAmountResult.txt", std::ofstream::app);
+  std::ofstream outputResult("./output/differentDimensionResult.txt", std::ofstream::app);
 
   outputResult << "Dimension: " << NUMDIMS << std::endl;
   outputResult << "query file: " << queryFile << std::endl;
@@ -82,10 +82,10 @@ int main()
     touchCountSum += touchCount;
     resultAmount += ids.size();
     searchAmount++;
-    std::cout << queryName <<"  search results: " << std::endl;
-    std::cout << "  Node touched times: " << touchCount << std::endl;
-    for(int i = 0; i < ids.size(); i++)
-      std::cout << "  " << imageNames[ids[i]] << std::endl;
+    //std::cout << queryName <<"  search results: " << std::endl;
+    //std::cout << "  Node touched times: " << touchCount << std::endl;
+    //for(int i = 0; i < ids.size(); i++)
+      //std::cout << "  " << imageNames[ids[i]] << std::endl;
     ids.clear();
   }
   std::cout << "Average touched times per search: " << float(touchCountSum)/searchAmount << std::endl;

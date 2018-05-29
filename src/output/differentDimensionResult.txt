@@ -1,0 +1,117 @@
+Dimension: 4
+query file: input/queryAllImage.txt
+feature file: input/gray_hist_4dim.txt
+data amount: 5613
+Range: 0
+Search Amount: 5613
+Average touched times per search: 31.2594
+Average results found per search: 1
+
+Dimension: 5
+query file: input/queryAllImage.txt
+feature file: input/gray_hist_5dim.txt
+data amount: 5613
+Range: 0
+Search Amount: 5613
+Average touched times per search: 42.7055
+Average results found per search: 1
+
+Dimension: 6
+query file: input/queryAllImage.txt
+feature file: input/gray_hist_6dim.txt
+data amount: 5613
+Range: 0
+Search Amount: 5613
+Average touched times per search: 50.7641
+Average results found per search: 1
+
+Dimension: 7
+query file: input/queryAllImage.txt
+feature file: input/gray_hist_7dim.txt
+data amount: 5613
+Range: 0
+Search Amount: 5613
+Average touched times per search: 49.954
+Average results found per search: 1
+
+Dimension: 8
+query file: input/queryAllImage.txt
+feature file: input/gray_hist_8dim.txt
+data amount: 5613
+Range: 0
+Search Amount: 5613
+Average touched times per search: 50.1331
+Average results found per search: 1
+
+Dimension: 9
+query file: input/queryAllImage.txt
+feature file: input/gray_hist_9dim.txt
+data amount: 5613
+Range: 0
+Search Amount: 5613
+Average touched times per search: 51.3162
+Average results found per search: 1
+
+Dimension: 10
+query file: input/queryAllImage.txt
+feature file: input/gray_hist_10dim.txt
+data amount: 5613
+Range: 0
+Search Amount: 5613
+Average touched times per search: 56.1356
+Average results found per search: 1
+
+Dimension: 11
+query file: input/queryAllImage.txt
+feature file: input/gray_hist_11dim.txt
+data amount: 5613
+Range: 0
+Search Amount: 5613
+Average touched times per search: 56.442
+Average results found per search: 1
+
+Dimension: 12
+query file: input/queryAllImage.txt
+feature file: input/gray_hist_12dim.txt
+data amount: 5613
+Range: 0
+Search Amount: 5613
+Average touched times per search: 53.2108
+Average results found per search: 1
+
+Dimension: 13
+query file: input/queryAllImage.txt
+feature file: input/gray_hist_13dim.txt
+data amount: 5613
+Range: 0
+Search Amount: 5613
+Average touched times per search: 57.0782
+Average results found per search: 1
+
+Dimension: 14
+query file: input/queryAllImage.txt
+feature file: input/gray_hist_14dim.txt
+data amount: 5613
+Range: 0
+Search Amount: 5613
+Average touched times per search: 57.2606
+Average results found per search: 1
+
+Dimension: 15
+query file: input/queryAllImage.txt
+feature file: input/gray_hist_15dim.txt
+data amount: 5613
+Range: 0
+Search Amount: 5613
+Average touched times per search: 55.1495
+Average results found per search: 1
+
+Dimension: 16
+query file: input/queryAllImage.txt
+feature file: input/gray_hist_16dim.txt
+data amount: 5613
+Range: 0
+Search Amount: 5613
+Average touched times per search: 52.6164
+Average results found per search: 1
+
