@@ -48,3 +48,126 @@ Average touched times per search: 184.454
 Average results found per search: 14.1089
 Average same kind rate per search: 0.404775
 
+---------------------------------------------------
+Dimension: 9
+query file: input/queryAllImage.txt
+feature file: input/gray_hist_9dim.txt
+data amount: 5613
+Range: 7000
+Search Amount: 5613
+Average touched times per search: 215.644
+Average results found per search: 20.9127
+Average same kind rate per search: 0.374666
+
+Dimension: 9
+query file: input/queryAllImage.txt
+feature file: input/gray_hist_9dim.txt
+data amount: 5613
+Range: 6800
+Search Amount: 5613
+Average touched times per search: 209.484
+Average results found per search: 17.9428
+Average same kind rate per search: 0.393551
+
+Dimension: 9
+query file: input/queryAllImage.txt
+feature file: input/gray_hist_9dim.txt
+data amount: 5613
+Range: 6950
+Search Amount: 5613
+Average touched times per search: 214.086
+Average results found per search: 20.1192
+Average same kind rate per search: 0.380189
+
+☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆
+Dimension: 9
+query file: input/queryAllImage.txt
+feature file: input/gray_hist_9dim.txt
+data amount: 5613
+Range: 6945
+Search Amount: 5613
+Average touched times per search: 213.933
+Average results found per search: 20.0426
+Average same kind rate per search: 0.380723
+
+Dimension: 9
+query file: input/queryAllImage.txt
+feature file: input/color_feature.txt
+data amount: 5613
+Range: 5000
+Search Amount: 5613
+Average touched times per search: 1067.17
+Average results found per search: 5215.06
+Average same kind rate per search: 0
+
+Dimension: 9
+query file: input/queryAllImage.txt
+feature file: input/color_feature.txt
+data amount: 5613
+Range: 500
+Search Amount: 5613
+Average touched times per search: 98.6132
+Average results found per search: 5.74506
+Average same kind rate per search: 0.324782
+
+Dimension: 9
+query file: input/queryAllImage.txt
+feature file: input/color_feature.txt
+data amount: 5613
+Range: 1000
+Search Amount: 5613
+Average touched times per search: 248.009
+Average results found per search: 152.231
+Average same kind rate per search: 0.0165687
+
+Dimension: 9
+query file: input/queryAllImage.txt
+feature file: input/color_feature.txt
+data amount: 5613
+Range: 600
+Search Amount: 5613
+Average touched times per search: 122.679
+Average results found per search: 13.7034
+Average same kind rate per search: 0.171922
+
+Dimension: 9
+query file: input/queryAllImage.txt
+feature file: input/color_feature.txt
+data amount: 5613
+Range: 650
+Search Amount: 5613
+Average touched times per search: 135.985
+Average results found per search: 20.4402
+Average same kind rate per search: 0.126136
+
+Dimension: 9
+query file: input/queryAllImage.txt
+feature file: input/color_feature.txt
+data amount: 5613
+Range: 645
+Search Amount: 5613
+Average touched times per search: 134.609
+Average results found per search: 19.6838
+Average same kind rate per search: 0.130946
+
+☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆
+Dimension: 9
+query file: input/queryAllImage.txt
+feature file: input/color_feature.txt
+data amount: 5613
+Range: 647
+Search Amount: 5613
+Average touched times per search: 135.156
+Average results found per search: 19.9884
+Average same kind rate per search: 0.128986
+
+Dimension: 9
+query file: input/queryAllImage.txt
+feature file: input/color_feature.txt
+data amount: 5613
+Range: 648
+Search Amount: 5613
+Average touched times per search: 135.43
+Average results found per search: 20.1395
+Average same kind rate per search: 0.127739
+

@@ -115,3 +115,12 @@ Search Amount: 5613
 Average touched times per search: 52.6164
 Average results found per search: 1
 
+Dimension: 16
+query file: input/queryAllImage.txt
+feature file: input/gray_hist_16dim.txt
+data amount: 5613
+Range: 0
+Search Amount: 5613
+Average touched times per search: 85.6332
+Average results found per search: 1.01069
+Average same kind rate per search: 1
