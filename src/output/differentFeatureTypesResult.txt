@@ -1,27 +1,4 @@
 Dimension: 9
-query file: input/query.txt
-feature file: input/gray_hist_9dim.txt
-data amount: 5000
-Range: 0
-Search Amount: 96
-Average touched times per search: 43.6042
-Average results found per search: 1
-
-Dimension: 9
-query file: input/query.txt
-feature file: input/color_feature.txt
-data amount: 5000
-Range: 0
-Search Amount: 96
-Average touched times per search: 18.8542
-Average results found per search: 1
-
-Dimension: 9
-query file: input/queryAllImage.txt
-feature file: input/color_feature.txt
-data amount: 5613
-Range: 0
-Dimension: 9
 query file: input/queryAllImage.txt
 feature file: input/color_feature.txt
 data amount: 5613
@@ -29,6 +6,7 @@ Range: 0
 Search Amount: 5613
 Average touched times per search: 28.8748
 Average results found per search: 1.01069
+Average same kind rate per search: 1
 
 Dimension: 9
 query file: input/queryAllImage.txt
@@ -36,141 +14,50 @@ feature file: input/gray_hist_9dim.txt
 data amount: 5613
 Range: 0
 Search Amount: 5613
-Average touched times per search: 51.3162
-Average results found per search: 1
+Average touched times per search: 83.9888
+Average results found per search: 1.01069
+Average same kind rate per search: 1
 
 Dimension: 9
 query file: input/queryAllImage.txt
-feature file: input/color_feature.txt
-data amount: 5613
-Range: 1000
-Search Amount: 5613
-Average touched times per search: 248.009
-Average results found per search: 152.231
-
-Dimension: 9
-query file: input/queryAllImage.txt
-feature file: input/color_feature.txt
-data amount: 5613
-Range: 500
-Search Amount: 5613
-Average touched times per search: 98.6132
-Average results found per search: 5.74506
-
-Dimension: 9
-query file: input/queryAllImage.txt
-feature file: input/gray_hist_9dim.txt
-data amount: 5613
-Range: 6000
-Search Amount: 5613
-Average touched times per search: 185.173
-Average results found per search: 9.33814
-
-Dimension: 9
-query file: input/queryAllImage.txt
-feature file: input/gray_hist_9dim.txt
-data amount: 5613
-Range: 5000
-Search Amount: 5613
-Average touched times per search: 156.122
-Average results found per search: 3.84874
-
-Dimension: 9
-query file: input/queryAllImage.txt
-feature file: input/gray_hist_9dim.txt
-data amount: 5613
-Range: 5500
-Search Amount: 5613
-Average touched times per search: 170.443
-Average results found per search: 6.03011
-
-Dimension: 9
-query file: input/queryAllImage.txt
-feature file: input/gray_hist_9dim.txt
-data amount: 5613
-Range: 1600
-Search Amount: 5613
-Average touched times per search: 77.5354
-Average results found per search: 1.00143
-
-Dimension: 9
-query file: input/queryAllImage.txt
-feature file: input/color_feature.txt
-data amount: 5613
-Range: 600
-Search Amount: 5613
-Average touched times per search: 122.679
-Average results found per search: 13.7034
-
-Dimension: 9
-query file: input/queryAllImage.txt
-feature file: input/color_feature9dim.txt
-data amount: 5613
-Range: 600
-Search Amount: 5613
-Average touched times per search: 75.6184
-Average results found per search: 1.24158
-
-Dimension: 9
-query file: input/queryAllImage.txt
-feature file: input/color_feature9dim.txt
-data amount: 5613
-Range: 5000
-Search Amount: 5613
-Average touched times per search: 994.319
-Average results found per search: 4434.4
-
-Dimension: 9
-query file: input/queryAllImage.txt
-feature file: input/color_feature9dim.txt
-data amount: 5613
-Range: 1000
-Search Amount: 5613
-Average touched times per search: 149.121
-Average results found per search: 11.4376
-
-Dimension: 9
-query file: input/queryAllImage.txt
-feature file: input/color_feature9dim.txt
+feature file: input/hsv_component.txt
 data amount: 5613
 Range: 0
 Search Amount: 5613
-Average touched times per search: 23.2924
-Average results found per search: 1
+Average touched times per search: 35.5949
+Average results found per search: 1.01069
+Average same kind rate per search: 1
 
 Dimension: 9
 query file: input/queryAllImage.txt
-feature file: input/color_feature9dim.txt
+feature file: input/graySingular9dim.txt
 data amount: 5613
-Range: 700
+Range: 0
 Search Amount: 5613
-Average touched times per search: 90.9726
-Average results found per search: 1.78496
+Average touched times per search: 15.5619
+Average results found per search: 1.01105
+Average same kind rate per search: 1
 
-Dimension: 9
-query file: input/queryAllImage.txt
-feature file: input/color_feature9dim.txt
-data amount: 5613
-Range: 800
-Search Amount: 5613
-Average touched times per search: 108.338
-Average results found per search: 3.15607
+----------------------------------------------------
 
-Dimension: 9
+Dimension: 16
 query file: input/queryAllImage.txt
-feature file: input/gray_hist_9dim.txt
+feature file: input/gray_hist_16dim.txt
 data amount: 5613
-Range: 4500
+Range: 0
 Search Amount: 5613
-Average touched times per search: 142.487
-Average results found per search: 2.47728
+Average touched times per search: 85.6332
+Average results found per search: 1.01069
+Average same kind rate per search: 1
 
-Dimension: 9
+Dimension: 16
 query file: input/queryAllImage.txt
-feature file: input/gray_hist_9dim.txt
+feature file: input/graySingular.txt
 data amount: 5613
-Range: 4800
+Range: 0
 Search Amount: 5613
-Average touched times per search: 150.568
-Average results found per search: 3.22911
+Average touched times per search: 21.7185
+Average results found per search: 1.01069
+Average same kind rate per search: 1
+
 
