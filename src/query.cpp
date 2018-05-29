@@ -6,7 +6,7 @@
 #include <vector>
 #include "RTree.h"
 
-#define NUMDIMS	8
+#define NUMDIMS	16
 
 const int kindIndex[10]={0,504,1134,1826,2321,2826,3334,3852,4356,4983};
 
@@ -46,7 +46,7 @@ int main()
   std::ifstream query(queryFile);
   std::ifstream feature(featureFile);
   std::ifstream imageList("./input/imagelist.txt");
-  std::ofstream outputResult("./output/differentDimRateResult.txt", std::ofstream::app);
+  std::ofstream outputResult("./output/differentDimensionResult.txt", std::ofstream::app);
 
   outputResult << "Dimension: " << NUMDIMS << std::endl;
   outputResult << "query file: " << queryFile << std::endl;

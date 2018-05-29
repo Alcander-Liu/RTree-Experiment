@@ -4,8 +4,9 @@ feature file: input/gray_hist_4dim.txt
 data amount: 5613
 Range: 0
 Search Amount: 5613
-Average touched times per search: 31.2594
-Average results found per search: 1
+Average touched times per search: 37.6408
+Average results found per search: 1.01069
+Average same kind rate per search: 1
 
 Dimension: 5
 query file: input/queryAllImage.txt
@@ -13,8 +14,9 @@ feature file: input/gray_hist_5dim.txt
 data amount: 5613
 Range: 0
 Search Amount: 5613
-Average touched times per search: 42.7055
-Average results found per search: 1
+Average touched times per search: 52.752
+Average results found per search: 1.01069
+Average same kind rate per search: 1
 
 Dimension: 6
 query file: input/queryAllImage.txt
@@ -22,8 +24,9 @@ feature file: input/gray_hist_6dim.txt
 data amount: 5613
 Range: 0
 Search Amount: 5613
-Average touched times per search: 50.7641
-Average results found per search: 1
+Average touched times per search: 64.0189
+Average results found per search: 1.01069
+Average same kind rate per search: 1
 
 Dimension: 7
 query file: input/queryAllImage.txt
@@ -31,8 +34,9 @@ feature file: input/gray_hist_7dim.txt
 data amount: 5613
 Range: 0
 Search Amount: 5613
-Average touched times per search: 49.954
-Average results found per search: 1
+Average touched times per search: 76.5715
+Average results found per search: 1.01069
+Average same kind rate per search: 1
 
 Dimension: 8
 query file: input/queryAllImage.txt
@@ -40,8 +44,9 @@ feature file: input/gray_hist_8dim.txt
 data amount: 5613
 Range: 0
 Search Amount: 5613
-Average touched times per search: 50.1331
-Average results found per search: 1
+Average touched times per search: 65.1894
+Average results found per search: 1.01069
+Average same kind rate per search: 1
 
 Dimension: 9
 query file: input/queryAllImage.txt
@@ -49,8 +54,9 @@ feature file: input/gray_hist_9dim.txt
 data amount: 5613
 Range: 0
 Search Amount: 5613
-Average touched times per search: 51.3162
-Average results found per search: 1
+Average touched times per search: 83.9888
+Average results found per search: 1.01069
+Average same kind rate per search: 1
 
 Dimension: 10
 query file: input/queryAllImage.txt
@@ -58,8 +64,9 @@ feature file: input/gray_hist_10dim.txt
 data amount: 5613
 Range: 0
 Search Amount: 5613
-Average touched times per search: 56.1356
-Average results found per search: 1
+Average touched times per search: 83.5526
+Average results found per search: 1.01069
+Average same kind rate per search: 1
 
 Dimension: 11
 query file: input/queryAllImage.txt
@@ -67,8 +74,9 @@ feature file: input/gray_hist_11dim.txt
 data amount: 5613
 Range: 0
 Search Amount: 5613
-Average touched times per search: 56.442
-Average results found per search: 1
+Average touched times per search: 81.8633
+Average results found per search: 1.01069
+Average same kind rate per search: 1
 
 Dimension: 12
 query file: input/queryAllImage.txt
@@ -76,8 +84,9 @@ feature file: input/gray_hist_12dim.txt
 data amount: 5613
 Range: 0
 Search Amount: 5613
-Average touched times per search: 53.2108
-Average results found per search: 1
+Average touched times per search: 74.1017
+Average results found per search: 1.01069
+Average same kind rate per search: 1
 
 Dimension: 13
 query file: input/queryAllImage.txt
@@ -85,8 +94,9 @@ feature file: input/gray_hist_13dim.txt
 data amount: 5613
 Range: 0
 Search Amount: 5613
-Average touched times per search: 57.0782
-Average results found per search: 1
+Average touched times per search: 87.0214
+Average results found per search: 1.01069
+Average same kind rate per search: 1
 
 Dimension: 14
 query file: input/queryAllImage.txt
@@ -94,8 +104,9 @@ feature file: input/gray_hist_14dim.txt
 data amount: 5613
 Range: 0
 Search Amount: 5613
-Average touched times per search: 57.2606
-Average results found per search: 1
+Average touched times per search: 80.424
+Average results found per search: 1.01069
+Average same kind rate per search: 1
 
 Dimension: 15
 query file: input/queryAllImage.txt
@@ -103,17 +114,9 @@ feature file: input/gray_hist_15dim.txt
 data amount: 5613
 Range: 0
 Search Amount: 5613
-Average touched times per search: 55.1495
-Average results found per search: 1
-
-Dimension: 16
-query file: input/queryAllImage.txt
-feature file: input/gray_hist_16dim.txt
-data amount: 5613
-Range: 0
-Search Amount: 5613
-Average touched times per search: 52.6164
-Average results found per search: 1
+Average touched times per search: 79.2099
+Average results found per search: 1.01069
+Average same kind rate per search: 1
 
 Dimension: 16
 query file: input/queryAllImage.txt
@@ -124,3 +127,4 @@ Search Amount: 5613
 Average touched times per search: 85.6332
 Average results found per search: 1.01069
 Average same kind rate per search: 1
+
