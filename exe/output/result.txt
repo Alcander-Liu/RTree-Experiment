@@ -1,0 +1,10 @@
+Dimension: 9
+query file: input/queryAllImage.txt
+feature file: input/color_feature.txt
+data amount: 5613
+range: 0
+Search Amount: 5613
+Average touched times per search: 28.8748
+Average results found per search: 1.01069
+Average same kind rate per search: 1
+

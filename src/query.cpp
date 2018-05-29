@@ -46,13 +46,13 @@ int main()
   std::ifstream query(queryFile);
   std::ifstream feature(featureFile);
   std::ifstream imageList("./input/imagelist.txt");
-  std::ofstream outputResult("./output/differentFeatureTypeRateResult.txt", std::ofstream::app);
+  std::ofstream outputResult("./output/result.txt", std::ofstream::app);
 
   outputResult << "Dimension: " << NUMDIMS << std::endl;
   outputResult << "query file: " << queryFile << std::endl;
   outputResult << "feature file: " << featureFile << std::endl;
   outputResult << "data amount: " << dataAmount << std::endl;
-  outputResult << "Range: " << range << std::endl;
+  outputResult << "range: " << range << std::endl;
 
   // build two way index list of image names
   std::string * imageNames = new std::string[dataAmount];
